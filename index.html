@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-gle | Landing page</title>
+    <!--=============== Logo ===============-->
+    <link rel="shortcut icon" href="./Assets/Images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Assets/CSS/all.css">
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <!-- AIOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- AIOS Library ends -->
+</head>
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+    <nav class="nav container">
+        
+        <div class="nav_menu" id="nav-menu">
+            <a href="#" class="nav_logo">
+                <img src="./Assets/Images/logo.png" alt="logo">
+              </a>
+
+            <ul class="nav_list">
+                <li class="nav_item">
+                    <a href="#home" class="nav_link active-link">Home</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#about" class="nav_link">About Us</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#services" class="nav_link">Services</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#portfolio" class="nav_link">Portfolio</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#blog" class="nav_link">Blog</a>
+                </li>
+                <div class="nav_close" id="nav-close">
+                    <i class="fal fa-times"></i>
+                </div>
+            </ul>
+        </div>
+        <div class="cta">
+            <button class="btn"  id="contForm">Contact</button>
+            <i class="fal fa-bars nav_toggle"></i>
+        <!-- Toggle -->
+        <!-- <div class="nav_toggle" id="nav-toggle">
+            
+        </div> -->
+        </div>
+    </nav>
+        
+   </header> 
+   <!-- ===========HEADER Ends=========== -->
+
+   <!-- ===========Contact============ -->
+   <section class="contact" id="contact">
+    <i class="fal fa-times closeForm"></i>
+    <div class="contact_container">
+        <div class="contact-details">
+            <div class="box-details">
+                <div class="card-cont">
+                <input type="email" placeholder="Enter email" required>
+                <input type="password" placeholder="Enter password" required>
+                <input type="tel" placeholder="Enter cell" required>
+                <textarea  cols="30" rows="10" placeholder="Enter message"></textarea>
+                <button type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <!-- ============Main============== -->
+   <mian class="main">
+    <!-- =============Home================ -->
+    <section class="home section" id="home">
+        <div class="home_container container">
+            <div class="home-grid">
+                <div class="home_card">
+                    <img src="./Assets/Images/donut.png" alt="">
+                    <h2>We help to</h2>
+                    <h1>Solve Clients</h1>
+                    <h2>Problems</h2>
+                    <p>Our Activate suite of business apps gives your Lorem ipsum dolor sit amet, consectetur.</p>
+                    <div class="play">
+                        <button type="button" class="btn">Our Portfolio</button>
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+    
+                <div class="home_img">
+                    <img src="./Assets/Images/hero.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============Sponsors=================== -->
+    <section class="sponsor section">
+        <div class="sponsor_container container">
+            <div class="sponsor-card grid">
+                <div class="title">
+                    <small>These Companies Trust Us</small>
+                    <h3>With Their Marketing</h3>
+                </div>
+                    <div class="icons">
+                        <div class="preBtn dot" onclick="plusSlides(-1, 0)"><i class="fal fa-chevron-left"></i></div>
+                        <div class="nxtBtn dot" onclick="plusSlides(1, 0)"><i class="fal fa-chevron-right"></i></div>
+
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <div class="sponsor_img">
+                                    <img src="./Assets/Images/s5.png" alt="">
+                                    <img src="./Assets/Images/s4.png" alt="">
+                                    <img src="./Assets/Images/s2.png" alt="">
+                                    <img src="./Assets/Images/s3.png" alt="">
+                                    <img src="./Assets/Images/s1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="sponsor_img">
+                                    <img src="./Assets/Images/s1.png" alt="">
+                                    <img src="./Assets/Images/s2.png" alt="">
+                                    <img src="./Assets/Images/s3.png" alt="">
+                                    <img src="./Assets/Images/s4.png" alt="">
+                                    <img src="./Assets/Images/s5.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========About======== -->
+    <section class="section about" id="about">
+        <div class="about_container container">
+            <div class="about-head">
+                <div class="about-img">
+                    <img src="./Assets/Images/laptop.png" alt="">
+                </div>
+    
+                <div class="about-card">
+                    <h2>About Us</h2>
+                    <h4>Simple! Our mission is to become the best design agency in the world!</h4>
+                <p>
+                    What’s an outsourced marketing un-agency, you say? Well, we’re the antithesis to your run-of-the-mill agency that oversells and underdelivers.</p>
+    
+                <p>Lately, it’s been about closing the biggest contracts. But what about making the biggest impact for clients? Our goal is to get RESULTS that will make clients HAPPY without overpricing.</p>
+    
+                <p>Feeling skeptical? Work with us, and see the difference between getting marketing partners invested in your growth, versus salesmen invested in milking you dry!</p>
+                <button type="button" class="btn">LET'S TALK!</button>
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+    </section>
+
+    <!-- =============Stats=============== -->
+    <section class="section stats">
+        <div class="stats_container container">
+            <div class="stats-head">
+                <div class="title">
+                    <small>Digital Marketing Agency & Software Development</small>
+                    <h3>Company Website Design Full Services.</h3>
+                </div>
+                <div class="btn btnStats">
+                    <div class="stat-counter">
+                        <div class="conunter_head">
+                            <div class="counter" data-target="200">0</div>
+                            <span>K</span>
+                        </div>
+                        <small>Clients</small>
+                    </div>
+                    <div class="stat-counter bf">
+                        <div class="conunter_head">
+                            <div class="counter" data-target="190">0</div>
+                            <span>+</span>
+                        </div>
+                        <small>Team Members</small>
+                    </div>
+                    <div class="stat-counter">
+                        <div class="conunter_head">
+                            <div class="counter" data-target="150">0</div>
+                            <span>K</span>
+                        </div>
+                        <small>Active Work</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============Servicess================== -->
+    <section class="section services" id="services">
+        <div class="service_container container">
+            <div class="title">
+                <small>We Are A Digital Agency</small>
+                <h3>Experts Services To Change Business</h3>
+            </div>
+            <div class="service-box">
+                <div class="boxService">
+                    <div class="service-img">
+                        <img src="./Assets/Images/box1.png" alt="">
+                    </div>
+                    <div class="box-title">
+                        <h5>Link Building</h5>
+                        <p>We'll earn white hat backlinks and send qualified traffic to your business through guest posting.</p>
+                        <i class="fal fa-plus"></i>
+                    </div>
+                </div>
+                <div class="boxService">
+                    <div class="service-img">
+                        <img src="./Assets/Images/box2.png" alt="">
+                    </div>
+                    <div class="box-title">
+                        <h5>SEO Services</h5>
+                        <p>From content creation to consulting and keyword research, we can help you outrank your competition.</p>
+                        <i class="fal fa-plus"></i>
+                    </div>
+                </div>
+                <div class="boxService">
+                    <div class="service-img">
+                        <img src="./Assets/Images/box3.png" alt="">
+                    </div>
+                    <div class="box-title">
+                        <h5>Web Design & Development</h5>
+                        <p>We make websites that don't just look great, but are also optimized for UX, conversions, and search engine visibility.</p>
+                        <i class="fal fa-plus"></i>
+                    </div>
+                </div>
+                <div class="boxService">
+                    <div class="service-img">
+                        <img src="./Assets/Images/box4.png" alt="">
+                    </div>
+                    <div class="box-title">
+                        <h5>Done-For-Your-Marketing</h5>
+                        <p>Outsource all your marketing needs to a dedicated marketing team handpicked just for your business.</p>
+                        <i class="fal fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============Portfolio============== -->
+    <section class="section portfolio" id="portfolio">
+        <div class="portfolio_container container">
+            <div class="imgBg">
+                <img src="./Assets/Images/gbg.png" alt="">
+            </div>
+            <div class="port-head">
+
+                <div class="title">
+                    <small>Awesome Portfolio</small>
+                    <h3>We Have A Great Portfolio To Check</h3>
+                </div>
+
+                <div class="slider_container">
+
+                    <div class="mySlide2">
+                        <div class="port-box">
+                            <div class="port-card">
+                                <div  class="port-box-img">
+                                    <div class="port-img"><img src="./Assets/Images/Group1.png"></div>
+                                </div>
+                                <div class="port-text">
+                                    <h4>Web Design Project</h4>
+                                    <p>UX/UI Design</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="port-box">
+                            <div class="port-card">
+                                <div  class="port-box-img cl">
+                                    <div class="port-img md"><img src="./Assets/Images/Group2.png"></div>
+                                </div>
+                                <div class="port-text">
+                                    <h4>Web Design Project</h4>
+                                    <p>UX/UI Design</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="port-box">
+                            <div class="port-card">
+                                <div  class="port-box-img cl1">
+                                    <div class="port-img md"><img src="./Assets/Images/Group3.png"></div>
+                                </div>
+                                <div class="port-text">
+                                    <h4>Web Design Project</h4>
+                                    <p>UX/UI Design</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="port-box">
+                            <div class="port-card">
+                                <div  class="port-box-img cl2">
+                                    <div class="port-img md"><img src="./Assets/Images/Group4.png"></div>
+                                </div>
+                                <div class="port-text">
+                                    <h4>Web Design Project</h4>
+                                    <p>UX/UI Design</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mySlide2">
+                        <div class="port-box">
+                            <div class="port-card">
+                                <div  class="port-box-img">
+                                    <div class="port-img"><img src="./Assets/Images/Group4.png"></div>
+                                </div>
+                                <div class="port-text">
+                                    <h4>Web Design Project</h4>
+                                    <p>UX/UI Design</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="port-box">
+                            <div class="port-card">
+                                <div  class="port-box-img cl">
+                                    <div class="port-img md"><img src="./Assets/Images/Group3.png"></div>
+                                </div>
+                                <div class="port-text">
+                                    <h4>Web Design Project</h4>
+                                    <p>UX/UI Design</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="port-box">
+                            <div class="port-card">
+                                <div  class="port-box-img cl1">
+                                    <div class="port-img md"><img src="./Assets/Images/Group1.png"></div>
+                                </div>
+                                <div class="port-text">
+                                    <h4>Web Design Project</h4>
+                                    <p>UX/UI Design</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="port-box">
+                            <div class="port-card">
+                                <div  class="port-box-img cl2">
+                                    <div class="port-img md"><img src="./Assets/Images/Group1.png"></div>
+                                </div>
+                                <div class="port-text">
+                                    <h4>Web Design Project</h4>
+                                    <p>UX/UI Design</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="portBtn">
+                    <div class="preBtn dot" onclick="plusSlides(-1, 1)"><i class="fal fa-chevron-left dotted"></i></div>
+                    <div class="nxtBtn dot" onclick="plusSlides(1, 1)"><i class="fal fa-chevron-right dotted"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============Blog============ -->
+    <section class="section blog" id="blog">
+        <div class="blog_container container">
+            <div class="blog-head">
+                <div class="title">
+                    <small>Our Blog</small>
+                    <h3>Our Blog & Article</h3>
+                </div>
+                <div class="imgbg">
+                    <img src="./Assets/Images/donut2.png" alt="">
+                </div>
+                <div class="slider_container">
+
+                    <div class="blog-card mySlide1">
+                        <div class="blog-box">
+                            <img src="./Assets/Images/b1.png" >
+                            <div class="text">
+                                <h4>April 09, 2022</h4>
+                                <p>Why We Decided To Create Build Your DXP</p>
+                            </div>
+                            <i class="fal fa-plus"></i>
+                        </div>
+                        <div class="blog-box">
+                            <img src="./Assets/Images/b3.png" >
+                            <div class="text">
+                                <h4>April 09, 2022</h4>
+                                <p>Why We Decided To Create Build Your DXP</p>
+                            </div>
+                            <i class="fal fa-plus"></i>
+                        </div>
+                        <div class="blog-box">
+                            <img src="./Assets/Images/b2.png" >
+                            <div class="text">
+                                <h4>April 09, 2022</h4>
+                                <p>Why We Decided To Create Build Your DXP</p>
+                            </div>
+                            <i class="fal fa-plus"></i>
+                        </div>
+                        <div class="blog-box">
+                            <img src="./Assets/Images/b4.png" >
+                            <div class="text">
+                                <h4>April 09, 2022</h4>
+                                <p>Why We Decided To Create Build Your DXP</p>
+                            </div>
+                            <i class="fal fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="blog-card mySlide1">
+                        <div class="blog-box">
+                            <img src="./Assets/Images/b4.png" >
+                            <div class="text">
+                                <h4>April 09, 2022</h4>
+                                <p>Why We Decided To Create Build Your DXP</p>
+                            </div>
+                            <i class="fal fa-plus"></i>
+                        </div>
+                        <div class="blog-box">
+                            <img src="./Assets/Images/b1.png" >
+                            <div class="text">
+                                <h4>April 09, 2022</h4>
+                                <p>Why We Decided To Create Build Your DXP</p>
+                            </div>
+                            <i class="fal fa-plus"></i>
+                        </div>
+                        <div class="blog-box">
+                            <img src="./Assets/Images/b3.png" >
+                            <div class="text">
+                                <h4>April 09, 2022</h4>
+                                <p>Why We Decided To Create Build Your DXP</p>
+                            </div>
+                            <i class="fal fa-plus"></i>
+                        </div>
+                        <div class="blog-box">
+                            <img src="./Assets/Images/b2.png" >
+                            <div class="text">
+                                <h4>April 09, 2022</h4>
+                                <p>Why We Decided To Create Build Your DXP</p>
+                            </div>
+                            <i class="fal fa-plus"></i>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="portBtn">
+                    <div class="preBtn dot" onclick="plusSlides(-1, 0)"><i class="fal fa-chevron-left dotted"></i></div>
+                    <div class="nxtBtn dot" onclick="plusSlides(1, 0)"><i class="fal fa-chevron-right dotted"></i></div>
+                </div>
+            </div>   
+        </div>
+    </section>
+    
+   </mian>
+   <!-- ============Main Ends============== -->
+   <!-- =================footer========================= -->
+   <footer>
+    <img src="./Assets/Images/footimg.png" alt="Thumbnail" class="footimg">
+    <section class="section footer">
+        <img src="./Assets/Images/foot2.png" alt="" class="imgfooter">
+        <div class="footer_container container">
+            <div class="footer_box">
+                <div class="footer-card">
+                    <div class="top">
+                        <img src="./Assets/Images/email.png" alt="" width="60px">
+                        <h1>Like Our Service? <br> Subscribe Us</h1>
+                        <p>As a app web crawler expert, I help organizations adjust to the expanding significance of internet promoting.</p>
+                        <div class="sign">
+                            <input type="text" placeholder="Enter your email">
+                            <button type="button" class="btn">Subscribe</button>
+                        </div>
+                    </div>
+    
+                    <div class="links">
+                        <div class="logo">
+                            <img src="./Assets/Images/logo.png" alt="" width="30px">
+                            <p>Proin ac quam et lectus vestibulum blandit. Nunc maximus nibh at placerat tincidunt. Nam sem lacus, ornare non ante sed, ultricies fringilla massa.</p>
+                        </div>
+                        <div class="quick-links">
+                            <div class="link1">
+                                <h4>Company</h4>
+                                <li><a href="#about"> About Us</a></li>
+                                <li><a href="#"> Contact Us</a></li>
+                                <li><a href="#"> Careers</a></li>
+                                <li><a href="#"> Support</a></li>
+                            </div>
+                            <div class="link1">
+                                <h4>Links</h4>
+                                <li><a href="#"> FAQ</a></li>
+                                <li><a href="#"> Terms</a></li>
+                                <li><a href="#"> Privacy</a></li>
+                                <li><a href="#blog"> Blog</a></li>
+                            </div>
+                            <div class="link1">
+                                <h4>Contact</h4>
+                                <li><a href="#"> Phone: <br> +234 706 774 8296</a></li>
+                                <li><a href="#"> Email: <br> CletsyMedia@gmail.com</a></li>
+                                <li><a href="#"> Address: <br> Eket, Akwa Ibom</a></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hr"></div>
+
+                <div class="social">
+                    <div class="icons">
+                        <div><i class="fab fa-facebook-f"></i></div>
+                        <div><i class="fab fa-twitter"></i></div>
+                        <div><i class="fab fa-instagram"></i></div>
+                        <div><i class="fab fa-youtube"></i></div>
+                    </div>
+                    <div class="lead"><p>&copy;2022 CletsyMedia</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+   </footer>
+   <!-- =================footer Ends========================= -->
+   
+   <script src="https://unpkg.com/aos@next/dist/aos.js">
+    AOS.init({
+    offset:400,
+    duration: 1000,
+    easing: 'ease-in-out'
+  })
+   </script>
+
+<script src="./Assets/mainjs/main.js"></script>
+
+</body>
+</html>
