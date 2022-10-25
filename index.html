@@ -9,6 +9,10 @@
     <link rel="shortcut icon" href="./Assets/Images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./Assets/CSS/all.css">
     <link rel="stylesheet" href="./Assets/CSS/style.css">
+
+    <!-- swiper css link  -->
+   <link rel="stylesheet" href="./Assets/CSS/swiper-bundle.min.css">
+
     <!-- AIOS Library -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- AIOS Library ends -->
@@ -81,7 +85,7 @@
     <section class="home section" id="home">
         <div class="home_container container">
             <div class="home-grid">
-                <div class="home_card">
+                <div class="home_card" data-aos="fade-right">
                     <img src="./Assets/Images/donut.png" alt="">
                     <h2>We help to</h2>
                     <h1>Solve Clients</h1>
@@ -93,7 +97,7 @@
                     </div>
                 </div>
     
-                <div class="home_img">
+                <div class="home_img" data-aos="fade-left">
                     <img src="./Assets/Images/hero.png" alt="">
                 </div>
             </div>
@@ -108,31 +112,17 @@
                     <small>These Companies Trust Us</small>
                     <h3>With Their Marketing</h3>
                 </div>
-                    <div class="icons">
-                        <div class="preBtn dot" onclick="plusSlides(-1, 0)"><i class="fal fa-chevron-left"></i></div>
-                        <div class="nxtBtn dot" onclick="plusSlides(1, 0)"><i class="fal fa-chevron-right"></i></div>
-
-                        <div class="slideshow-container">
-                            <div class="mySlides fade">
-                                <div class="sponsor_img">
-                                    <img src="./Assets/Images/s5.png" alt="">
-                                    <img src="./Assets/Images/s4.png" alt="">
-                                    <img src="./Assets/Images/s2.png" alt="">
-                                    <img src="./Assets/Images/s3.png" alt="">
-                                    <img src="./Assets/Images/s1.png" alt="">
-                                </div>
-                            </div>
-                            <div class="mySlides fade">
-                                <div class="sponsor_img">
-                                    <img src="./Assets/Images/s1.png" alt="">
-                                    <img src="./Assets/Images/s2.png" alt="">
-                                    <img src="./Assets/Images/s3.png" alt="">
-                                    <img src="./Assets/Images/s4.png" alt="">
-                                    <img src="./Assets/Images/s5.png" alt="">
-                                </div>
-                            </div>
-                        </div>
+                    
+                <div class="swiper wiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./Assets/Images/s1.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./Assets/Images/s2.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./Assets/Images/s3.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./Assets/Images/s4.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./Assets/Images/s5.png" alt=""></div>
                     </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -141,11 +131,11 @@
     <section class="section about" id="about">
         <div class="about_container container">
             <div class="about-head">
-                <div class="about-img">
+                <div class="about-img" data-aos="flip-left">
                     <img src="./Assets/Images/laptop.png" alt="">
                 </div>
     
-                <div class="about-card">
+                <div class="about-card" data-aos="flip-right">
                     <h2>About Us</h2>
                     <h4>Simple! Our mission is to become the best design agency in the world!</h4>
                 <p>
@@ -203,7 +193,7 @@
                 <small>We Are A Digital Agency</small>
                 <h3>Experts Services To Change Business</h3>
             </div>
-            <div class="service-box">
+            <div class="service-box" data-aos="zoom-out" data-aos-delay="100">
                 <div class="boxService">
                     <div class="service-img">
                         <img src="./Assets/Images/box1.png" alt="">
@@ -262,13 +252,13 @@
                     <h3>We Have A Great Portfolio To Check</h3>
                 </div>
 
-                <div class="slider_container">
+                <div class="swiper portfolio-slider">
 
-                    <div class="mySlide2">
-                        <div class="port-box">
+                    <div class="swiper-wrapper content">
+                        <div class="port-box swiper-slide">
                             <div class="port-card">
                                 <div  class="port-box-img">
-                                    <div class="port-img"><img src="./Assets/Images/Group1.png"></div>
+                                    <div class="port-img"><img src="./Assets/Images/Group1.png" alt=""></div>
                                 </div>
                                 <div class="port-text">
                                     <h4>Web Design Project</h4>
@@ -276,10 +266,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="port-box">
+                        <div class="port-box swiper-slide">
                             <div class="port-card">
                                 <div  class="port-box-img cl">
-                                    <div class="port-img md"><img src="./Assets/Images/Group2.png"></div>
+                                    <div class="port-img md"><img src="./Assets/Images/Group2.png" alt=""></div>
                                 </div>
                                 <div class="port-text">
                                     <h4>Web Design Project</h4>
@@ -287,10 +277,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="port-box">
+                        <div class="port-box swiper-slide">
                             <div class="port-card">
                                 <div  class="port-box-img cl1">
-                                    <div class="port-img md"><img src="./Assets/Images/Group3.png"></div>
+                                    <div class="port-img md"><img src="./Assets/Images/Group3.png" alt=""></div>
                                 </div>
                                 <div class="port-text">
                                     <h4>Web Design Project</h4>
@@ -298,10 +288,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="port-box">
+                        <div class="port-box swiper-slide">
                             <div class="port-card">
-                                <div  class="port-box-img cl2">
-                                    <div class="port-img md"><img src="./Assets/Images/Group4.png"></div>
+                                <div  class="port-box-img">
+                                    <div class="port-img"><img src="./Assets/Images/Group4.png" alt=""></div>
+                                </div>
+                                <div class="port-text">
+                                    <h4>Web Design Project</h4>
+                                    <p>UX/UI Design</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="port-box swiper-slide">
+                            <div class="port-card">
+                                <div  class="port-box-img cl">
+                                    <div class="port-img md"><img src="./Assets/Images/Group2.png" alt=""></div>
                                 </div>
                                 <div class="port-text">
                                     <h4>Web Design Project</h4>
@@ -310,59 +311,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mySlide2">
-                        <div class="port-box">
-                            <div class="port-card">
-                                <div  class="port-box-img">
-                                    <div class="port-img"><img src="./Assets/Images/Group4.png"></div>
-                                </div>
-                                <div class="port-text">
-                                    <h4>Web Design Project</h4>
-                                    <p>UX/UI Design</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="port-box">
-                            <div class="port-card">
-                                <div  class="port-box-img cl">
-                                    <div class="port-img md"><img src="./Assets/Images/Group3.png"></div>
-                                </div>
-                                <div class="port-text">
-                                    <h4>Web Design Project</h4>
-                                    <p>UX/UI Design</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="port-box">
-                            <div class="port-card">
-                                <div  class="port-box-img cl1">
-                                    <div class="port-img md"><img src="./Assets/Images/Group1.png"></div>
-                                </div>
-                                <div class="port-text">
-                                    <h4>Web Design Project</h4>
-                                    <p>UX/UI Design</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="port-box">
-                            <div class="port-card">
-                                <div  class="port-box-img cl2">
-                                    <div class="port-img md"><img src="./Assets/Images/Group1.png"></div>
-                                </div>
-                                <div class="port-text">
-                                    <h4>Web Design Project</h4>
-                                    <p>UX/UI Design</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
+                    <div class="bullet-item swiper-pagination"></div>
                 </div>
 
-                <div class="portBtn">
-                    <div class="preBtn dot" onclick="plusSlides(-1, 1)"><i class="fal fa-chevron-left dotted"></i></div>
-                    <div class="nxtBtn dot" onclick="plusSlides(1, 1)"><i class="fal fa-chevron-right dotted"></i></div>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -378,10 +330,10 @@
                 <div class="imgbg">
                     <img src="./Assets/Images/donut2.png" alt="">
                 </div>
-                <div class="slider_container">
+                <div class="swiper blog-slider">
 
-                    <div class="blog-card mySlide1">
-                        <div class="blog-box">
+                    <div class="swiper-wrapper content2">
+                        <div class="blog-box swiper-slide">
                             <img src="./Assets/Images/b1.png" >
                             <div class="text">
                                 <h4>April 09, 2022</h4>
@@ -389,7 +341,7 @@
                             </div>
                             <i class="fal fa-plus"></i>
                         </div>
-                        <div class="blog-box">
+                        <div class="blog-box swiper-slide">
                             <img src="./Assets/Images/b3.png" >
                             <div class="text">
                                 <h4>April 09, 2022</h4>
@@ -397,7 +349,7 @@
                             </div>
                             <i class="fal fa-plus"></i>
                         </div>
-                        <div class="blog-box">
+                        <div class="blog-box swiper-slide">
                             <img src="./Assets/Images/b2.png" >
                             <div class="text">
                                 <h4>April 09, 2022</h4>
@@ -405,7 +357,7 @@
                             </div>
                             <i class="fal fa-plus"></i>
                         </div>
-                        <div class="blog-box">
+                        <div class="blog-box swiper-slide">
                             <img src="./Assets/Images/b4.png" >
                             <div class="text">
                                 <h4>April 09, 2022</h4>
@@ -414,47 +366,11 @@
                             <i class="fal fa-plus"></i>
                         </div>
                     </div>
-                    <div class="blog-card mySlide1">
-                        <div class="blog-box">
-                            <img src="./Assets/Images/b4.png" >
-                            <div class="text">
-                                <h4>April 09, 2022</h4>
-                                <p>Why We Decided To Create Build Your DXP</p>
-                            </div>
-                            <i class="fal fa-plus"></i>
-                        </div>
-                        <div class="blog-box">
-                            <img src="./Assets/Images/b1.png" >
-                            <div class="text">
-                                <h4>April 09, 2022</h4>
-                                <p>Why We Decided To Create Build Your DXP</p>
-                            </div>
-                            <i class="fal fa-plus"></i>
-                        </div>
-                        <div class="blog-box">
-                            <img src="./Assets/Images/b3.png" >
-                            <div class="text">
-                                <h4>April 09, 2022</h4>
-                                <p>Why We Decided To Create Build Your DXP</p>
-                            </div>
-                            <i class="fal fa-plus"></i>
-                        </div>
-                        <div class="blog-box">
-                            <img src="./Assets/Images/b2.png" >
-                            <div class="text">
-                                <h4>April 09, 2022</h4>
-                                <p>Why We Decided To Create Build Your DXP</p>
-                            </div>
-                            <i class="fal fa-plus"></i>
-                        </div>
-                    </div>
+
+                    <div class="swiper-pagination"></div>
 
                 </div>
                 
-                <div class="portBtn">
-                    <div class="preBtn dot" onclick="plusSlides(-1, 0)"><i class="fal fa-chevron-left dotted"></i></div>
-                    <div class="nxtBtn dot" onclick="plusSlides(1, 0)"><i class="fal fa-chevron-right dotted"></i></div>
-                </div>
             </div>   
         </div>
     </section>
@@ -525,16 +441,124 @@
     </section>
    </footer>
    <!-- =================footer Ends========================= -->
-   
-   <script src="https://unpkg.com/aos@next/dist/aos.js">
-    AOS.init({
-    offset:400,
-    duration: 1000,
-    easing: 'ease-in-out'
-  })
-   </script>
 
 <script src="./Assets/mainjs/main.js"></script>
+<!-- <script src="./Assets/mainjs/owl.carousel.min.js"></script> -->
 
+<!-- swiper js link  -->
+<script src="./Assets/mainjs/swiper-bundle.min.js"></script>
+<!-- AOS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<!-- AOS -->
+<script>
+    // Sponsors
+ // Swiper js
+ var swiper = new Swiper(".mySwiper", {
+  spaceBetween:20,
+  grabCursor: true,
+  loop: true,
+  pagination:{
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets:true,
+  },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+  breakpoints:{
+1024:{
+  slidesPerView:5,
+},  
+768:{
+  slidesPerView:4,
+},  
+750:{
+  slidesPerView:3,
+},  
+425:{
+  slidesPerView:2,
+},  
+375:{
+  slidesPerView:2,
+},  
+320:{
+  slidesPerView:2,
+}  
+},
+});
+// Portfolio
+ var swiper = new Swiper(".portfolio-slider", {
+  spaceBetween:20,
+  grabCursor: true,
+  loop: true,
+  pagination:{
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets:true,
+  },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+  breakpoints:{
+1024:{
+  slidesPerView:4,
+},  
+768:{
+  slidesPerView:3,
+},  
+750:{
+  slidesPerView:2,
+},  
+425:{
+  slidesPerView:1,
+},  
+375:{
+  slidesPerView:1,
+},  
+320:{
+  slidesPerView:1,
+}  
+},
+});
+// Blog
+ var swiper = new Swiper(".blog-slider", {
+  spaceBetween:20,
+  grabCursor: true,
+  loop: true,
+  pagination:{
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets:true,
+  },
+  breakpoints:{
+1024:{
+  slidesPerView:4,
+},  
+768:{
+  slidesPerView:3,
+},  
+750:{
+  slidesPerView:2,
+},  
+425:{
+  slidesPerView:1,
+},  
+375:{
+  slidesPerView:1,
+},  
+320:{
+  slidesPerView:1,
+}  
+},
+});
+
+AOS.init({
+      offset:400,
+      duration: 1000,
+      easing: 'ease-in-out'
+    });
+</script>
 </body>
 </html>
