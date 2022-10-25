@@ -165,8 +165,9 @@ header{
     background-image:var(--gradientshadow);
  }
 /* active-link */
-.nav_menu li a.active-link{
+.active-link{
     color:var(--white);
+    padding: 0.3rem;
     background-image:var(--gradientshadow);
  }
 /* Home */
@@ -468,6 +469,7 @@ header{
     justify-content: center;
     flex-direction: column;
     gap:.5rem;
+    margin:30px 0;
 }
 
 /* Blog */
@@ -951,9 +953,7 @@ footer{
         width:400px;
         height: 17rem;
     }
-    .port-box-img{
-        width:316px;
-    }
+
     .port-img {
         width:220px;
     }
@@ -1061,14 +1061,14 @@ footer{
         width: 180px;
     }
     .bf::after {
-        width:70px;
+        width:75px;
         height:.5px;
-        right:20%;
+        right:25%;
         top:-50%;
         transform: rotate(180deg);
     }
     .bf::before{
-        width:70px;
+        width:75px;
         height:.5px;
         left:20%;
         top:7rem;
