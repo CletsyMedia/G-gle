@@ -18,28 +18,6 @@ navClose.addEventListener('click', () => {
   nav.classList.remove('flick')
 });
 
-// slides
-let slideIndex1 = 0;
- showSlides1();
-
- function showSlides1() {
-   let i;
-   let slides = document.getElementsByClassName("mySlides");
-   let dots = document.getElementsByClassName("dot");
-   for (i = 0; i < slides.length; i++) {
-     slides[i].style.display = "none";  
-   }
-   slideIndex1++;
-   if (slideIndex1 > slides.length) {slideIndex1 = 1}    
-   for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" active", "");
-   }
-   slides[slideIndex1-1].style.display = "block";  
-   dots[slideIndex1-1].className += " active";
-   setTimeout(showSlides1, 3000); // Change image every 2 seconds
- };
-
-
 
 /*========Stats=======*/
 const counters = document.querySelectorAll('.counter');
@@ -58,30 +36,6 @@ counters.forEach(counter => {
     }
     updateCount();
 })
-
-
-// Multiple Slide
-
-let slideIndex2 = [1,1];
-let slideId = ["mySlide1", "mySlide2"]
-showSlides(1, 0);
-showSlides(1, 1);
-
-function plusSlides(n, no) {
-  showSlides(slideIndex2[no] += n, no);
-}
-
-function showSlides(n, no) {
-  let i;
-  let x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex2[no] = 1}    
-  if (n < 1) {slideIndex2[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex2[no]-1].style.display = "";  
-};
-
 
 // contact
 let formLog = document.querySelector('#contForm');
@@ -111,15 +65,12 @@ const scrollActive = () =>{
 
 		if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
 			sectionsClass.classList.add('active-link')
-		}                                                    
-		else{
-			sectionsClass.classList.remove('active-link');
+		}else{
+			sectionsClass.classList.remove('active-link')
 		}                                                    
 	})
 }
-window.addEventListener('scroll', scrollActive)
-
-
+window.addEventListener('scroll', scrollActive);
 
 
 
