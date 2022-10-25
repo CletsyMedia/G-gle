@@ -19,6 +19,16 @@ navClose.addEventListener('click', () => {
 });
 
 
+/*=============== REMOVE MENU MOBILE ===============*/
+const navLink = document.querySelectorAll('.nav_link');
+const linkAction = () =>{
+  const nav = document.querySelector('.nav_list')
+  nav.classList.remove('flick')
+}
+navLink.forEach(l => l.addEventListener('click', linkAction));
+
+
+
 /*========Stats=======*/
 const counters = document.querySelectorAll('.counter');
 const speed = 200;
@@ -51,29 +61,26 @@ FormClose.addEventListener('click', () =>{
 
 
 
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-const sections = document.querySelectorAll('section[id]');
+// /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+// const sections = document.querySelectorAll('section[id]');
     
-const scrollActive = () =>{
-  	const scrollY = window.pageYOffset
+// const scrollActive = () =>{
+//   	const scrollY = window.pageYOffset
 
-	sections.forEach(current =>{
-		const sectionHeight = current.offsetHeight,
-			  sectionTop = current.offsetTop - 58,
-			  sectionId = current.getAttribute('id'),
-			  sectionsClass = document.querySelector('.nav_menu a[href*=' + sectionId + ']')
+// 	sections.forEach(current =>{
+// 		const sectionHeight = current.offsetHeight,
+// 			  sectionTop = current.offsetTop - 58,
+// 			  sectionId = current.getAttribute('id'),
+// 			  sectionsClass = document.querySelector('.nav_menu a[href*=' + sectionId + ']')
 
-		if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-			sectionsClass.classList.add('active-link')
-		}else{
-			sectionsClass.classList.remove('active-link')
-		}                                                    
-	})
-}
-window.addEventListener('scroll', scrollActive);
-
-
-
+// 		if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+// 			sectionsClass.classList.add('active-link');
+// 		}else{
+// 			sectionsClass.classList.remove('active-link')
+// 		}                                                    
+// 	})
+// }
+// window.addEventListener('scroll', scrollActive);
 
 
 
