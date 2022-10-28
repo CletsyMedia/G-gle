@@ -118,6 +118,9 @@ img {
     /* background-color:#`; */
   }
   
+  html{
+    scroll-behavior: smooth;
+}
 header{
     position:fixed;
     background-color:transparent;
@@ -133,13 +136,16 @@ header{
     align-items: center;
     justify-content: space-between;
 }
+.nav_menu{
+    position: relative;
+}
 .nav_list{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .nav_item{
-    padding: 0 10px;
+    padding: 0 15px;
 }
 .nav_link{
     color: white;
@@ -154,29 +160,32 @@ header{
 .nav_close{
     display: none;
 }
-.nav_menu li a{
+.nav_close{
+    position: absolute;
+}
+.nav_list li a{
     background-color:transparent;
     padding: 0.3rem;
     border-radius:3px;
 }
+.nav_list li a:hover{
+    color:var(--white);
+    background-image:var(--gradientshadow);
+ }
+/* Active-Link */
+ .nav_list li a.active-Link{
+    color:var(--white);
+    background-image:var(--gradientshadow);
+ }
 
- .nav_menu li a:hover{
-    color:var(--white);
-    background-image:var(--gradientshadow);
- }
-/* active-link */
-.active-link{
-    color:var(--white);
-    padding: 0.3rem;
-    background-image:var(--gradientshadow);
- }
 /* Home */
 .home-grid{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    margin-top: 2rem;   
+    margin-top: 2rem;  
+    padding-bottom: 0; 
 }
 .home_img{
     width:700px;
@@ -866,7 +875,7 @@ footer{
         justify-content: center;
         gap:1rem;
     }
-    .nav_list {
+    .nav_menu{
         display:flex;
         align-items:flex-start;
         justify-content:flex-start;
@@ -883,11 +892,18 @@ footer{
         transition: all .5s ease;
         background-color: rgba(0, 0, 0, 0.4);
     }
+    .nav_list{
+        display: flex;
+        align-items:flex-start;
+        justify-content:flex-start;
+        flex-direction: column;
+        gap:2rem;
+    }
     .nav_close{
         position: absolute;
         display: block;
         top:1.3rem;
-        left:12%;
+        left:15%;
         cursor: pointer;
         font-size: 1.4rem;
     }
@@ -993,6 +1009,12 @@ footer{
     .section{
         padding:5rem 0 0;
     }
+    .nav_menu{
+        width: 40%;
+    }
+    .nav_close{
+        left:20%;
+    }
     .home-grid{
         display: flex;
         flex-direction: column-reverse;
@@ -1063,7 +1085,7 @@ footer{
     .bf::after {
         width:75px;
         height:.5px;
-        right:25%;
+        right:14%;
         top:-50%;
         transform: rotate(180deg);
     }
@@ -1140,6 +1162,9 @@ footer{
     .container{
         width:85%;
         margin: 0 2rem;
+    }
+    .nav_menu{
+        width: 45%;
     }
     .box-details{
         width:20rem;
