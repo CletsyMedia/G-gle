@@ -2,12 +2,12 @@
 // Simple
 
 const header = document.querySelector('header');
-    window.onscroll = () =>{
+  window.addEventListener('scroll', function() {
     header.classList.toggle('scroll-bg-header', window.scrollY > 0)
-}
+  })
 
 // Mobile menu
-let nav = document.querySelector('.nav_list');
+let nav = document.querySelector('.nav_menu');
 let navToggle = document.querySelector('.nav_toggle');
 let navClose =document.querySelector('.nav_close');
 
@@ -22,12 +22,33 @@ navClose.addEventListener('click', () => {
 /*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll('.nav_link');
 const linkAction = () =>{
-  const nav = document.querySelector('.nav_list')
+  const nav = document.querySelector('.nav_menu')
   nav.classList.remove('flick')
 }
-navLink.forEach(l => l.addEventListener('click', linkAction));
+navLink.forEach(l => l.addEventListener('click', linkAction))
 
 
+// Scroll Active Link
+window.onscroll = function(){
+  let section = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('.nav_link');
+
+section.forEach(sec => {
+  let top = window.scrollY;
+  let offset = sec.offsetTop - 150;
+  let height = sec.offsetHeight;
+  let id = sec.getAttribute('id');
+
+  if(top >= offset && top < offset + height){
+    navLinks.forEach(links => {
+      links.classList.remove('active-Link');
+      document.querySelector('.nav_link[href*='+ id +']').classList.add
+      ('active-Link');
+    });
+  };
+});
+
+ };
 
 /*========Stats=======*/
 const counters = document.querySelectorAll('.counter');
@@ -59,28 +80,6 @@ FormClose.addEventListener('click', () =>{
   contactForm.classList.remove('active')
 });
 
-
-
-// /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-// const sections = document.querySelectorAll('section[id]');
-    
-// const scrollActive = () =>{
-//   	const scrollY = window.pageYOffset
-
-// 	sections.forEach(current =>{
-// 		const sectionHeight = current.offsetHeight,
-// 			  sectionTop = current.offsetTop - 58,
-// 			  sectionId = current.getAttribute('id'),
-// 			  sectionsClass = document.querySelector('.nav_menu a[href*=' + sectionId + ']')
-
-// 		if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-// 			sectionsClass.classList.add('active-link');
-// 		}else{
-// 			sectionsClass.classList.remove('active-link')
-// 		}                                                    
-// 	})
-// }
-// window.addEventListener('scroll', scrollActive);
 
 
 
